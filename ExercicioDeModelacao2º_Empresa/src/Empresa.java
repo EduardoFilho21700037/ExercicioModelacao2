@@ -7,6 +7,16 @@ public class Empresa {
     List<Cliente> clientes = new ArrayList<>();
     List<Tarefa> tarefas = new ArrayList<>();
 
+void adicionarCliente(){
 
+}
+
+void contratarFuncionario(){
+
+}
+
+void relatorio1(){
+
+}
 
 }
