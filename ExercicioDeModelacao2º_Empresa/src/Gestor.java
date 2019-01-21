@@ -7,10 +7,16 @@ public class Gestor extends FuncionarioComTarefa {
 
     @Override
     double calculaSalario(String mes) {
-        return 0;
+        int nrTarefaGeridas =0;
+        for (Tarefa tarefa:tarefas){
+            String mesTarefa = tarefa.getMes();
+            if (mesTarefa.equals(mes)){
+                nrTarefaGeridas++;
+            }
+        }
+
+        return salarioBase + 0.5 * nrTarefaGeridas;
     }
 
-   /* double calcularSalario(String mes){
-        int tarefasGeridas = 0;
-    } */
+
 }

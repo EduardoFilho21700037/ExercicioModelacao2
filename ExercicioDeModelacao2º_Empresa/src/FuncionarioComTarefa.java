@@ -10,7 +10,8 @@ public abstract class FuncionarioComTarefa extends Funcionario {
 
     }
 
-    void atribuirTarefa(){
+    void atribuirTarefa(Tarefa tarefa){
+        tarefas.add(tarefa);
 
     }
 
